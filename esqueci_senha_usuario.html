@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Página Inicial - Alugo</title>
+  <title>Esqueci a senha - Alugo</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,12 +18,12 @@
 
 </head>
 
-<body>
+<body class="text-center">
 
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="home.html">Alugo</a>
+      <a class="navbar-brand" href="index.html">Alugo</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -31,17 +31,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="inserir_produto.html">Inserir Produto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="perfil_usuario.html">Perfil</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="meus_produtos.html">Meus Produtos</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="meus_chats_usuario.html">Meus Chats</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ajuda_usuario.html">Ajuda</a>
@@ -57,9 +46,44 @@
     </div>
   </nav>
 
- 
-  Testo Padrão
+  <div class="esqueciSenha">
 
+  <div class="container">
+
+
+    
+  <h2> Esqueci a senha</h2>
+
+  <p class="mb-4 mt-4"> Informe seu número de celular no campo abaixo 
+  para receber uma nova senha via SMS </p>
+  
+  <div id="mensagemSucesso" class="alert alert-success alert-dismissible fade show" role="alert">
+    Nova senha enviada com sucesso
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div  id="mensagemAlerta" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Atenção!</strong> Informe o número do seu celular
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <h4>Celular</h4>
+
+  </div>
+
+    <input class="col-xs-2 mb-3" placeholder="ex: (81) 9899-15730" type="tel"  id="celular" required autofocus>
+
+    <input type="button" class="btn btn-secondary btn-lg btn-dark mb-3" value="Enviar" onclick="mostrarMensagem()"/>
+
+</div>
+    
+
+    
+  </form>
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
@@ -69,8 +93,10 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"> </script>
+  <script src="vendor/jquery/jquery.mask.min.js" ></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/esqueciSenha.js"> </script>
 
 </body>
 
