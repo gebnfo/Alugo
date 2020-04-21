@@ -15,6 +15,58 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    .body1 {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container1 {
+border: 2px solid #dedede;
+background-color: #f1f1f1;
+border-radius: 5px;
+padding: 10px;
+margin: 10px 0;
+}
+
+.darker {
+border-color: #ccc;
+background-color: #ddd;
+}
+
+.container1::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.container1 img {
+float: left;
+max-width: 60px;
+width: 100%;
+margin-right: 20px;
+border-radius: 50%;
+}
+
+.container1 img.right {
+float: right;
+margin-left: 20px;
+margin-right:0;
+}
+
+.time-right {
+float: right;
+color: #aaa;
+}
+
+.time-left {
+float: left;
+color: #999;
+}
+</style>
 
 </head>
 
@@ -65,7 +117,12 @@
   </nav>
 
   <div class="row d-flex justify-content-center" >
-  <h1 class="my-4" >Perfil</h1>
+    <table style="border-collapse: separate;">
+      <th><a href="home.html"><i class="fa fa-chevron-left"></i></a></th>
+      <th> <h1 class="my-4" >Perfil</h1>          
+      </th>
+    </table>
+   
   </div>
 
   <div class="container col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5" style="border: 3px solid black; width: 50%; height: 800px;"> 

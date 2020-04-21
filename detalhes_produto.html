@@ -15,7 +15,59 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+
+  <style>
+    .body1 {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container1 {
+border: 2px solid #dedede;
+background-color: #f1f1f1;
+border-radius: 5px;
+padding: 10px;
+margin: 10px 0;
+}
+
+.darker {
+border-color: #ccc;
+background-color: #ddd;
+}
+
+.container1::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.container1 img {
+float: left;
+max-width: 60px;
+width: 100%;
+margin-right: 20px;
+border-radius: 50%;
+}
+
+.container1 img.right {
+float: right;
+margin-left: 20px;
+margin-right:0;
+}
+
+.time-right {
+float: right;
+color: #aaa;
+}
+
+.time-left {
+float: left;
+color: #999;
+}
+</style>
 </head>
 
 <body>
@@ -60,19 +112,21 @@
   <nav>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="home.html">Página Inicial</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Produto</li>
+      <li class="breadcrumb-item"><a href="meus_produtos.html">Meus Produtos</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Detalhes Produto</li>
     </ol>
   </nav>
-  <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
+  <div class="body1">
+  <div class="container1">
 
+    <table style="border-collapse: separate;">
+      <th><a href="meus_produtos.html"><i class="fa fa-chevron-left"></i></a></th>
+      <th><h2 style="text-align: center;">Detalhes Produto</h2>          
+      </th>
+    </table>
 
-<table>
-  
-  <th><h2> &nbsp &nbsp &nbsp Serra Elétrica</h2></th>
-</table>
-
-<div style="margin-left: 50px;"  marginclass="card" style="width: 18rem;">
-  <img class="card-img-top" src="img/500x300.png" alt="Card image cap">
+<div style="margin-left: 50px;">
+  <img  src="img/serra-eletrica-meus-produtos.jpg" width="150px" height="150px" alt="sgvgcxgvbxc" />
   <div class="card-body">
     <h4>Preço: R$ 50,00</h4>
     <h5 class="card-title">Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec ac odio tempor orci. Eget nullam non nisi est sit. Neque aliquam vestibulum morbi blandit.</h5>
@@ -81,17 +135,17 @@
     <p class="card-text">Boa Vista Recife</p>
     
     
-    <table>
+   
 
-<th><button type="button" vertical-align="top" width="30px" class="btn btn-dark btn-lg btn-block">Fale com o Locador</button></th>
+<button type="button" vertical-align="top" width="30px" class="btn btn-dark btn-lg btn-block"><a href=chat_usuario.html style="text-decoration:none; color:white ;">Fale com o Locador</a></button>
 
-</table>
+
 
  
   </div>
 </div>
 
-
+</div>
 
 
 

@@ -15,7 +15,59 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+
+  <style>
+    .body1 {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container1 {
+border: 2px solid #dedede;
+background-color: #f1f1f1;
+border-radius: 5px;
+padding: 10px;
+margin: 10px 0;
+}
+
+.darker {
+border-color: #ccc;
+background-color: #ddd;
+}
+
+.container1::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.container1 img {
+float: left;
+max-width: 60px;
+width: 100%;
+margin-right: 20px;
+border-radius: 50%;
+}
+
+.container1 img.right {
+float: right;
+margin-left: 20px;
+margin-right:0;
+}
+
+.time-right {
+float: right;
+color: #aaa;
+}
+
+.time-left {
+float: left;
+color: #999;
+}
+</style>
 </head>
 
 <body>
@@ -56,58 +108,69 @@
       </div>
     </div>
   </nav> 
-  <div class="container" align="center">
-    <nav aria-label="breadcrumb">
+  
+
+
+    <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="home.html">Página Inicial</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Detalhes do Produto</li>
+        <li class="breadcrumb-item"><a href="meus_produtos.html">Meus Produtos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Editar Produto</li>
       </ol>
     </nav>
-          
-    <form class="form-horizontal" style="border=2px;">
-    <fieldset>
     
+    
+    <div class="row d-flex justify-content-center">
+    <table>
+      <th><a href="home.html"><i class="fa fa-chevron-left"></i></a></th>
+      <th> <h2>Editar Produto</h2></th>        
+    </table>
    
-    <legend>Serra Elétrica</legend>               
-        <div class="form-group">
-            <img src="https://a-static.mlcdn.com.br/618x463/moto-serra-eletrica-sabre-16-polegadas-40cm-2400w-matsuyama/vendaspontual/00000283e/3370037835dc67a91548245e86433b8f.jpg" width="140px" heigth="100px">
-                    <img src="https://http2.mlstatic.com/moto-serra-eletrica-D_NQ_NP_950645-MLB31148963728_062019-F.jpg" width="140px" heigth="100px">
-                    <img src="https://http2.mlstatic.com/moto-serra-eletrica-2400w-16-matsuyama-eletrosserra-D_NQ_NP_850367-MLB31205752308_062019-F.webp" width="140px" heigth="100px"><br>
-      <label class="col-md-4 control-label" for="filebutton">Serra elétrica</label>
-      <div class="col-md-4">
-        <input id="filebutton" name="filebutton" class="input-file" type="file">
-      </div>
+    </div>
+
+
+
+<div class="container col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5" style="border: 3px solid black; width: 50%; height: 800px;"> 
+  
+    
+  <div class="row d-flex justify-content-center">
+    <img src="https://a-static.mlcdn.com.br/618x463/moto-serra-eletrica-sabre-16-polegadas-40cm-2400w-matsuyama/vendaspontual/00000283e/3370037835dc67a91548245e86433b8f.jpg" width="140px" heigth="100px">
+    <img src="https://http2.mlstatic.com/moto-serra-eletrica-D_NQ_NP_950645-MLB31148963728_062019-F.jpg" width="140px" heigth="100px">
+    <img src="https://http2.mlstatic.com/moto-serra-eletrica-2400w-16-matsuyama-eletrosserra-D_NQ_NP_850367-MLB31205752308_062019-F.webp" width="140px" heigth="100px"><br>
+
+
+<input id="filebutton" name="filebutton" class="input-file" type="file">
+
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Título:</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Adriano Serra de Andrade">
     </div>
     
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="product_id">Nome:</label>  
-      
-        <div class="col-md-4" float="rigth">
-      <input id="product_id" name="product_id" placeholder="PRODUCT ID" class="form-control input-md" required="" type="text" value="Serra Elétrica">
-          </div>
-    </div>
-       <div class="form-group">
-      <label class="col-md-4 control-label" for="product_name">Preço:</label>  
-      <div class="col-md-4">
-      <input id="product_name" name="product_name" placeholder="" class="form-control input-md" required="" type="text" value="R$ 50,00">
-     </div>
+  
+    <div class="form-group mt-4">
+      <label for="exampleInputEmail1">Preço</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="R$ 50,00">
     </div>
     <div class="form-group">
-      <label class="col-md-4 control-label" for="product_name_fr">Descrição:</label>
-      <div class="col-md-4">                     
-        <textarea class="form-control" id="product_name_fr" name="product_name_fr">Serra elétrica, contém manual de instrução</textarea>
-      </div>
-    </div>
+      <label for="exampleInputEmail1">Descrição:</label>
+      <input type="texr" class="form-control" id="exampleInputPassword1" value="Serra elétrica com manuel de instrução">
+    </div>      
+    </form>
+  
+    <button type="submit" class="btn btn-primary btn-block bg-dark">Alterar</button>
+  </form>
     
-    <div class="form-group">
-      
-      <div class="col-md-4">
-        <button id="singlebutton" name="singlebutton" class="btn btn-dark">Alterar</button>
-      </div>
-      </div>    
-     </fieldset>      
-             </form></div>
+  
+
+</div>
+</div>
+    
+  
+
+
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Alugo 2020</p>
