@@ -15,7 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body class="text-center">
@@ -32,12 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ajuda_usuario.html">Ajuda</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="termos_usuario.html">Termos</a>
-          </li>
+         
               <li class="nav-item">
             <a class="nav-link" href="Index.html">Sair</a>
           </li>
@@ -50,9 +45,15 @@
 
   <div class="container">
 
-
+    <div class="row d-flex justify-content-center">
+      <table>
+        <th><a href="index.html"><i class="fa fa-chevron-left"></i></a></th>
+        <th> <h2>Esqueci a Senha</h2></th>        
+      </table>
+     
+      </div>
     
-  <h2> Esqueci a senha</h2>
+  
 
   <p class="mb-4 mt-4"> Informe seu número de celular no campo abaixo 
   para receber uma nova senha via SMS </p>
@@ -66,13 +67,12 @@
 
   <div  id="mensagemAlerta" class="alert alert-warning alert-dismissible fade show" role="alert">
     <strong>Atenção!</strong> Informe o número do seu celular
+    <br>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-
-  <h4>Celular</h4>
-
+ 
   </div>
 
     <input class="col-xs-2 mb-3" placeholder="ex: (81) 9899-15730" type="tel"  id="celular" required autofocus>
@@ -85,7 +85,7 @@
     
   </form>
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-dark fixed-bottom">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Alugo 2020</p>
     </div>

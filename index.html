@@ -13,11 +13,12 @@
 
     <!-- Custom styles for this template -->
     <link href="css/signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body class="text-center">
     <form class="form-signin" action="home.html">
-        <img class="mb-4" src="https://image.flaticon.com/icons/svg/1374/1374128.svg" alt="" width="72"
+        <img class="mb-4" src="https://image.flaticon.com/icons/svg/1374/1374128.svg" alt="logo alugo" width="72"
             height="72">
         <h1 class="h3 mb-3 font-weight-normal">Alugo</h1>
         <label for="inputEmail" class="sr-only">E-mail</label>
@@ -25,13 +26,15 @@
         <label for="inputPassword" class="sr-only">Senha</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
         <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Lembrar senha
-            </label>
+         
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-        <a href="meus_chats.html" class="btn btn-link btn-block">Não é Cadastrado? Cadastre-se</a>
-        <a href="esqueci_senha_usuario.html" class="btn btn-link btn-block">Esqueci a senha</a>
+        <table>
+            <th><a href="cadastro_usuario.html" class="btn btn-link btn-block">Não é Cadastrado? </a></th>
+            <th> <a href="esqueci_senha_usuario.html" class="btn btn-link btn-block">Esqueci a senha</a></th>
+        </table>
+        
+       
         <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
     </form>
 </body>
