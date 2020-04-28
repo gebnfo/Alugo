@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Página Inicial - Alugo</title> 
+  <title>Página Inicial - Alugo</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
   <!-- Suporte para IOS-->
@@ -13,11 +14,12 @@
   <meta name="apple-mobile-web-app-status-bar" content="#083354">
   <link href="css/corpo.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="home.html">Alugo</a>
+
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark fixed-top box-shadow py-2">
+    <div class="container nav-alugo">
+      <a style="color: #836FFF;" class="navbar-brand" href="home.html">Alugo</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -26,166 +28,247 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="inserir_produto.html">Inserir Produto</a>
+            <a class="nav-link" href="planos.html">
+              <img src="img/icone-prime.ico" style="width: 30px;" alt="">
+              Seja Prime</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="perfil_usuario.html">Perfil</a>
+            <a class="nav-link" href="meus_produtos.html">
+              <img src="img/icone-meus-anuncios.png" style="width: 30px;" alt="">
+              Meus Anúncios</a>
           </li>
-            <li class="nav-item">
-            <a class="nav-link" href="meus_produtos.html">Meus Produtos</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+              href="perfil_usuario.html">
+              <img src="img/icone-perfil.png" style="width: 30px;" alt="">
+              Perfil</a>
+            <div class="dropdown-menu" style="border-radius: 30px;" aria-labelledby="navbarDropdown">
+              <div class="arredondar-linha">
+                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="perfil_usuario.html">Meu Perfil
+                  <img class="ml-1" src="img/icone-perfil.ico" style="width: 30px;" alt=""></a>
+              </div>
+              <div class="arredondar-linha">
+                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="meus_produtos.html">Meus Anúncios
+                  <img class="ml-1" src="img/icone-meus-anuncios.png" style="width: 30px;" alt=""></a>
+              </div>
+              <div class="arredondar-linha">
+                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="local.html">
+                  Chat
+                  <img class="ml-2" src="img/icone-chat.png" style="width: 30px;" alt=""></a>
+              </div>
+              <div class="arredondar-linha">
+                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="ajuda_usuario.html">
+                  Ajuda
+                  <img src="img/icone-ajuda-2.ico" class="ml-1" style="width: 30px;" alt=""></a>
+              </div>
+              <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="Index.html">Sair
+                <img src="img/icone-sair.png" style="width: 30px;" alt=""></a>
+            </div>
           </li>
-            <li class="nav-item">
-            <a class="nav-link" href="meus_chats_usuario.html">Meus Chats</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ajuda_usuario.html">Ajuda</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="termos_usuario.html">Termos</a>
-          </li>
-              <li class="nav-item">
-            <a class="nav-link" href="Index.html">Sair</a>
+          <li class="nav-item tamanho-hover">
+            <a id="anunciar" class="btn text-white ml-md-2 px-3" style="background-color: orange; border-radius: 30px;"
+              href="inserir_produto.html">Anunciar</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-<div style="float: right;" >
-  <table style="border-collapse: separate;">
-    <th> <input class="form-control" type="text" placeholder="Buscar Produto" aria-label="Search"></th>
-    <th><button class="btn btn-dark">Procurar</button></th>        
-  </table> 
-</div>
-  <header>    
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('img/1900x1080.png')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>First Slide</h3>
-            <p>This is a description for the first slide.</p>
-          </div>
+
+
+  <section class="container-fluid bg-light pt-4 pb-1">
+    <div class="container">
+      <form action="">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="Estou procurando por..."
+            aria-label="Estou procurando por...">
+          <span class="input-group-append">
+            <button class="btn btn-primary py-0 px-3">
+              <img src="img/icone-lupa.png" style="width: 40px;" alt="">
+            </button>
+          </span>
         </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('img/1900x1080.png')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Second Slide</h3>
-            <p>This is a description for the second slide.</p>
-          </div>
+      </form>
+      <div class="row m-4 justify-content-center" style="border-radius: 20px; color: rgb(74, 74, 74);">
+
+        <div class="text-center tamanho-hover">
+          <a href="">
+            <img src="img/icone-ferramentas.png" style="width: 60px;" alt="">
+            <br>
+            <p class="m-0" style="color: black;">Ferramentas</p>
+          </a>
         </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('img/1900x1080.png')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Third Slide</h3>
-            <p>This is a description for the third slide.</p>
-          </div>
+
+        <div class="text-center ml-5 tamanho-hover">
+          <a href="">
+            <img src="img/icone-roupa.png" style="width: 60px;" alt="">
+            <br>
+            <p class="m-0" style="color: black;">Moda e Beleza</p>
+          </a>
         </div>
+
+        <div class="text-center ml-5 tamanho-hover">
+          <a href="">
+            <img src="img/icone-eletronico.png" style="width: 60px;" alt="">
+            <br>
+            <p class="m-0" style="color: black;">Eletrônicos</p>
+          </a>
+        </div>
+
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
     </div>
-  </header> 
-  <div class="container">
-<br>
-    <div class="row">
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="img/700x400.png" alt="produto"></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="detalhes_produto.html">Produto</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum
-              quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum
-              tempora ex quae? Nihil, dolorem!</p>
-          </div>
-        </div>
+  </section>
+
+  <section class="container mt-5">
+    <h4>Anúncios Recentes</h4>
+    <div class="row m-5">
+
+      <div class="col-md-3 col-6 tamanho-hover">
+        <a href="">
+          <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+          <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+          <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+        </a>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="detalhes_produto.html"><img class="card-img-top" src="img/700x400.png" alt="produto"></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="detalhes_produto.html">Produto</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-              gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
+
+      <div class="col-md-3 col-6 tamanho-hover">
+        <a href="">
+          <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+          <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+          <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+        </a>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="detalhes_produto.html"><img class="card-img-top" src="img/700x400.png" alt="produto"></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="detalhes_produto.html">Produto</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed
-              cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia
-              recusandae vero vel quam!</p>
-          </div>
-        </div>
+
+
+      <div class="col-md-3 col-6 tamanho-hover">
+        <a href="">
+          <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+          <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+          <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+        </a>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="detalhes_produto.html"><img class="card-img-top" src="img/700x400.png" alt="produto"></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="detalhes_produto.html">Produto</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-              gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
+
+      <div class="col-md-3 col-6 tamanho-hover">
+        <a href="">
+          <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+          <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+          <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+        </a>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="detalhes_produto.html"><img class="card-img-top" src="img/700x400.png" alt="produto"></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="detalhes_produto.html">Produto</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-              gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
+
+      <div class="col-md-3 col-6 mt-md-5 mt-2 tamanho-hover">
+        <a href="">
+          <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+          <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+          <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+        </a>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="detalhes_produto.html"><img class="card-img-top" src="img/700x400.png" alt="produto"></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="detalhes_produto.html">Produto</a>
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit
-              ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat
-              fugiat excepturi! Nemo, esse.</p>
-          </div>
-        </div>
+
+      <div class="col-md-3 col-6 mt-md-5 mt-2 tamanho-hover">
+        <a href="">
+          <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+          <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+          <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+        </a>
       </div>
-    </div> 
+
+      <div class="col-md-3 col-6 mt-md-5 mt-2 tamanho-hover">
+        <a href="">
+          <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+          <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+          <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+        </a>
+      </div>
+
+      <div class="col-md-3 col-6 mt-md-5 mt-2 tamanho-hover">
+        <a href="">
+          <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+          <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+          <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="container-fluid bg-light p-5">
+    <div class="container">
+      <h4 class="mb-4 mb-md-0">Anúncios Premium</h4>
+      <div class="row">
+
+        <div class="col-md-3 col-6 mt-md-5 mt-2 tamanho-hover">
+          <a href="">
+            <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+            <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+            <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-6 mt-md-5 mt-2 tamanho-hover">
+          <a href="">
+            <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+            <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+            <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-6 mt-md-5 mt-2 tamanho-hover">
+          <a href="">
+            <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+            <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+            <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-6 mt-md-5 mt-2 tamanho-hover">
+          <a href="">
+            <img src="img/home-anuncio-1.jpg" class="rounded" style="width: 175px;" alt="">
+            <p class="mt-2 mb-1 ml-1">Sapato NIKE</p>
+            <p class="m-0 ml-1" style="font-size: 20px;"><strong>R$ 45</strong></p>
+          </a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
 
   </div>
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Alugo 2020</p>
+  <footer class="bg-dark text-white p-5">
+
+    <div class="row text-center justify-content-between text-white">
+
+      <div class="col-md-5 d-flex">
+        <img class="mr-1 rounded" src="icons/icon-192x192.png" style="width: 70px; height: 50px;
+        min-width: 70px;" alt="">
+        <p>© Copyright 2020 - Alugo - Todos os direitos reservados CNPJ 14.380.200/0001-21 / Avenida dos Autonomistas,
+          nº 1496, Casa Caiada, Olinda/PE - CEP 06.020-902</p>
+      </div>
+
+      <div class="col-md-5 align-self-center d-flex">
+        <a class="" href="termos_usuario.html" style="color: white;">Termos e condições de uso</a>
+        <a class="ml-5" href="ajuda_usuario.html" style="color: white;">Perguntas Frequentes</a>
+      </div>
+
     </div>
-    <!-- /.container -->
+    </div>
   </footer>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="app.js"></script>
 </body>
+
 </html>

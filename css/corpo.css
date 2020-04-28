@@ -1,7 +1,11 @@
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
+  margin-top: 60px;
+}
+
+#bodyPerfil {
+  background-color: #f8f9fa;
 }
 
 .wrapper {
@@ -9,7 +13,84 @@ body {
   margin-bottom: -50px;
 }
 
-.footer,
-.push {
+.footer, .push {
   height: 50px;
+}
+
+#anunciar:hover {
+  background-color: black;
+}
+
+/* Home */
+
+.tamanho-hover a {
+  color: black;
+  text-decoration: none;
+}
+
+.tamanho-hover:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05), 0 4px 8px 0 rgba(0, 0, 0, .05);
+}
+
+/* Planos */
+
+.lista-plano li+li {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.lista-plano li {
+  padding: 1rem;
+}
+
+.arredondar {
+  border-radius: 30px;
+}
+
+
+/* dropdown nav */
+
+.arredondar-linha {
+  border-bottom: 2px solid #ccc;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+
+/* nav */
+
+.navbar-nav > li >a{
+  color: white;
+}
+
+.nav-alugo a {
+  color:white;
+}
+.navbar-nav > li:hover >a,
+.navbar-nav > li.active >a
+{
+  color: #836FFF;
+}
+
+.dropdown-item:active {
+  background-color: white;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: white;
+  text-decoration: none;
+  background-color: #836FFF;
+  border-radius: 17px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-brand:hover {
+  color: #836FFF;
 }

@@ -14,17 +14,16 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="manifest" href="manifest.json">
-<!-- Suporte para IOS-->
-<link rel="apple-touch-icon" href="icons/icon-96x96.png">
-<meta name="apple-mobile-web-app-status-bar" content="#083354">
-<link href="css/corpo.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <!-- Suporte para IOS-->
+  <link rel="apple-touch-icon" href="icons/icon-96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#083354">
+  <link href="css/corpo.css" rel="stylesheet">
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark fixed-top box-shadow py-2">
+    <div class="container nav-alugo">
       <a class="navbar-brand" href="home.html">Alugo</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -34,125 +33,159 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="inserir_produto.html">Inserir Produto</a>
+            <a class="nav-link" href="planos.html">
+              <img src="img/icone-prime.ico" style="width: 30px;" alt="">
+              Seja Prime</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="perfil_usuario.html">Perfil</a>
+            <a class="nav-link" href="meus_produtos.html">
+              <img src="img/icone-meus-anuncios.png" style="width: 30px;" alt="">
+              Meus Anúncios</a>
           </li>
-            <li class="nav-item">
-            <a class="nav-link" href="meus_produtos.html">Meus Produtos</a>
+          <li class="nav-item dropdown">
+            <a style="color: #836FFF;" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+              href="perfil_usuario.html">
+              <img src="img/icone-perfil.png" style="width: 30px;" alt="">
+              Perfil</a>
+            <div class="dropdown-menu" style="border-radius: 30px;" aria-labelledby="navbarDropdown">
+              <div class="arredondar-linha">
+                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="perfil_usuario.html">Meu Perfil
+                  <img class="ml-1" src="img/icone-perfil.ico" style="width: 30px;" alt=""></a>
+              </div>
+              <div class="arredondar-linha">
+                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="meus_produtos.html">Meus Anúncios
+                  <img class="ml-1" src="img/icone-meus-anuncios.png" style="width: 30px;" alt=""></a>
+              </div>
+              <div class="arredondar-linha">
+                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="local.html">
+                  Chat
+                  <img class="ml-2" src="img/icone-chat.png" style="width: 30px;" alt=""></a>
+              </div>
+              <div class="arredondar-linha">
+                <a style="color: white; background-color:#836FFF; border-radius: 17px;" class="dropdown-item" href="ajuda_usuario.html">
+                  Ajuda
+                  <img src="img/icone-ajuda-2.ico" class="ml-1" style="width: 30px;" alt=""></a>
+              </div>
+              <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="Index.html">Sair
+                <img src="img/icone-sair.png" style="width: 30px;" alt=""></a>
+            </div>
           </li>
-            <li class="nav-item">
-            <a class="nav-link" href="meus_chats_usuario.html">Meus Chats</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ajuda_usuario.html">Ajuda</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="termos_usuario.html">Termos</a>
-          </li>
-              <li class="nav-item">
-            <a class="nav-link" href="Index.html">Sair</a>
+          <li class="nav-item tamanho-hover">
+            <a id="anunciar" class="btn text-white ml-md-2 px-3" style="background-color: orange; border-radius: 30px;"
+              href="inserir_produto.html">Anunciar</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="home.html">Pagina Inicial</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Atual</li>
-    </ol>
-  </nav>
 
   <div class="wrapper">
-  
- <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="home.html">Pagina Inicial</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Atua</li>
-  </ol>
-</nav>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home.html">Pagina Inicial</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Atua</li>
+      </ol>
+    </nav>
 
 
 
-<div class="container">  
-  <div class="row d-flex justify-content-center" >
-  
-      <th><h2 style="text-align: center;">Ajuda</h2>          
-   
-    
-  </div>
-    
-    
-   <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         1. O que é lorem ipsum?
-        </button>
-      </h2>
-    </div>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <th>
+          <h2 style="text-align: center;">Ajuda</h2>
+
+
+      </div>
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                1. O que é lorem ipsum?
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                2. O que quer dizer lorem ipsum??
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                3. Qual o texto completo do lorem ipsum?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="alert alert-warning" role="alert">
+        Não encontrou solução? <a href="fale_conosco.html" class="alert-link">Fale conosco</a>.
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        2. O que quer dizer lorem ipsum??
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          3. Qual o texto completo do lorem ipsum?
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<div class="alert alert-warning" role="alert">
-  Não encontrou solução? <a href="fale_conosco.html" class="alert-link">Fale conosco</a>. 
-</div>   
-</div>
 
     <div class="push"></div>
   </div>
 
 
- 
 
 
 
- <!-- Footer -->
- <footer class="py-5 bg-dark footer">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Alugo 2020</p>
-  </div>
-  <!-- /.container -->
-</footer>
 
- 
+  <!-- Footer -->
+  <footer class="py-5 bg-dark footer">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Alugo 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
