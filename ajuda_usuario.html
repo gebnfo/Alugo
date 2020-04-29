@@ -57,12 +57,12 @@
                   <img class="ml-1" src="img/icone-meus-anuncios.png" style="width: 30px;" alt=""></a>
               </div>
               <div class="arredondar-linha">
-                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="local.html">
+                <a style="color: rgb(74, 74, 74);" class="dropdown-item" href="meus_chats_usuario.html">
                   Chat
                   <img class="ml-2" src="img/icone-chat.png" style="width: 30px;" alt=""></a>
               </div>
               <div class="arredondar-linha">
-                <a style="color: white; background-color:#836FFF; border-radius: 17px;" class="dropdown-item" href="ajuda_usuario.html">
+                <a style="color: white;" class="dropdown-item estou-nessa-pagina" href="ajuda_usuario.html">
                   Ajuda
                   <img src="img/icone-ajuda-2.ico" class="ml-1" style="width: 30px;" alt=""></a>
               </div>
@@ -81,93 +81,203 @@
 
   <div class="wrapper">
 
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="home.html">Pagina Inicial</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Atua</li>
-      </ol>
-    </nav>
+    <section class="container-fluid bg-light p-5">
+      <div class="container text-center">
+        <div class="mb-5">
+          <h3 class="display-4 text-primary">Olá, como podemos Ajudar?</h3>
+
+        </div>
+        <form action="">
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Estou procurando por..."
+              aria-label="Estou procurando por...">
+            <span class="input-group-append">
+              <button class="btn btn-primary py-0 px-3">
+                <img src="img/icone-lupa.png" style="width: 40px;" alt="">
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </section>
 
 
 
-    <div class="container">
-      <div class="row d-flex justify-content-center">
+    <section class="container p-5 duvida-por-tema">
 
-        <th>
-          <h2 style="text-align: center;">Ajuda</h2>
-
-
+      <div>
+        <h3>Dúvidas por tema</h3>
       </div>
 
+      <!-- Inicio - 1 categoria de dúvidas -->
+      <div class="pb-2" style="border-bottom: 1px solid #ccc;">
 
-      <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                1. O que é lorem ipsum?
-              </button>
-            </h2>
+        <div class="pt-4 pb-2">
+          <a data-toggle="collapse" href="#MinhaConta" role="button" aria-expanded="false"
+            aria-controls="multiCollapseExample1">
+            <img src="img/icone-seta-pro-lado.ico" style="width: 20px;" alt="">
+            Minha Conta</a>
+        </div>
+
+        <div class="collapse ml-5" id="MinhaConta">
+
+          <!--  Inicio - Um submenu com um texto -->
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#AlterarDados" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Como alterar dados da minha conta?</a>
           </div>
 
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
+          <div class="collapse ml-5" id="AlterarDados">
+            <p>Teste</p>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                aria-expanded="false" aria-controls="collapseTwo">
-                2. O que quer dizer lorem ipsum??
-              </button>
-            </h2>
+          <!--  Fim - Um submenu com um texto -->
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#ExcluirConta" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Como excluo minha conta?</a>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
+
+          <div class="collapse ml-5" id="ExcluirConta">
+            <p>Teste</p>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                aria-expanded="false" aria-controls="collapseThree">
-                3. Qual o texto completo do lorem ipsum?
-              </button>
-            </h2>
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#AlterarEmail" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Como altero meu email?</a>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
+
+          <div class="collapse ml-5" id="AlterarEmail">
+            <p>Teste</p>
           </div>
         </div>
       </div>
-      <br>
-      <div class="alert alert-warning" role="alert">
+      <!-- Fim - 1 categoria de dúvidas -->
+
+      <div class="pb-2" style="border-bottom: 1px solid #ccc;">
+
+        <div class="pt-4 pb-2">
+          <a data-toggle="collapse" href="#Anuncio" role="button" aria-expanded="false"
+            aria-controls="multiCollapseExample1">
+            <img src="img/icone-seta-pro-lado.ico" style="width: 20px;" alt="">
+            Anúncios</a>
+        </div>
+
+        <div class="collapse ml-5" id="Anuncio">
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#PublicarAnuncio" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Como publico um anúncio?</a>
+          </div>
+
+          <div class="collapse ml-5" id="PublicarAnuncio">
+            <p>Teste</p>
+          </div>
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#ProblemaImagem" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Problemas em anexar uma imagem</a>
+          </div>
+
+          <div class="collapse ml-5" id="ProblemaImagem">
+            <p>Teste</p>
+          </div>
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#VerMeusAnuncios" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Onde vejo meus anúncios publicados?</a>
+          </div>
+
+          <div class="collapse ml-5" id="VerMeusAnuncios">
+            <p>Teste</p>
+          </div>
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#EditarAnuncio" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Onde edito meus anúncios publicados?</a>
+          </div>
+
+          <div class="collapse ml-5" id="EditarAnuncio">
+            <p>Teste</p>
+          </div>
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#ExcluirAnuncio" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Onde excluo meus anúncios publicados?</a>
+          </div>
+
+          <div class="collapse ml-5" id="ExcluirAnuncio">
+            <p>Teste</p>
+          </div>
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#ExpiradoAnuncio" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Meu anúncio expirou e agora?</a>
+          </div>
+
+          <div class="collapse ml-5" id="ExpiradoAnuncio">
+            <p>Teste</p>
+          </div>
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#StatusAnuncio" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Meu anúncio não sai do status "em análise"</a>
+          </div>
+
+          <div class="collapse ml-5" id="StatusAnuncio">
+            <p>Teste</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pb-2" style="border-bottom: 1px solid #ccc;">
+
+        <div class="pt-4 pb-2">
+          <a data-toggle="collapse" href="#SerPrime" role="button" aria-expanded="false"
+            aria-controls="multiCollapseExample1">
+            <img src="img/icone-seta-pro-lado.ico" style="width: 20px;" alt="">
+            Ser Prime</a>
+        </div>
+
+        <div class="collapse ml-5" id="SerPrime">
+
+          <!--  Inicio - Um submenu com um texto -->
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#TornarPrime" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Como me torno prime?</a>
+          </div>
+
+          <div class="collapse ml-5" id="TornarPrime">
+            <p>Teste</p>
+          </div>
+          <!--  Fim - Um submenu com um texto -->
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#DescontoPrime" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Se eu for Gold, se for comprar o Platium tenho desconto?</a>
+          </div>
+
+          <div class="collapse ml-5" id="DescontoPrime">
+            <p>Teste</p>
+          </div>
+
+          <div class="mb-3">
+            <a data-toggle="collapse" href="#DurarPrime" role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">Por quanto tempo dura o prime?</a>
+          </div>
+
+          <div class="collapse ml-5" id="DurarPrime">
+            <p>Teste</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning mt-5" role="alert">
         Não encontrou solução? <a href="fale_conosco.html" class="alert-link">Fale conosco</a>.
       </div>
-    </div>
+
+    </section>
+
+
 
     <div class="push"></div>
   </div>
@@ -178,11 +288,24 @@
 
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark footer">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Alugo 2020</p>
+  <footer class="bg-dark text-white p-5">
+
+    <div class="row text-center justify-content-between text-white">
+
+      <div class="col-md-5 d-flex">
+        <img class="mr-1 rounded" src="icons/icon-192x192.png" style="width: 70px; height: 50px;
+        min-width: 70px;" alt="">
+        <p>© Copyright 2020 - Alugo - Todos os direitos reservados CNPJ 14.380.200/0001-21 / Avenida dos Autonomistas,
+          nº 1496, Casa Caiada, Olinda/PE - CEP 06.020-902</p>
+      </div>
+
+      <div class="col-md-5 align-self-center d-flex">
+        <a class="" href="termos_usuario.html" style="color: white;">Termos e condições de uso</a>
+        <a class="ml-5" href="ajuda_usuario.html" style="color: white;">Perguntas Frequentes</a>
+      </div>
+
     </div>
-    <!-- /.container -->
+    </div>
   </footer>
 
 

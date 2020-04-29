@@ -43,7 +43,7 @@
               Meus Anúncios</a>
           </li>
           <li class="nav-item dropdown">
-            <a style="color: #836FFF;" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
               href="perfil_usuario.html">
               <img src="img/icone-perfil.png" style="width: 30px;" alt="">
               Perfil</a>
@@ -79,11 +79,18 @@
     </div>
   </nav>
   <div class="wrapper">
-    <section class="container box-shadow">
+
+    <section class="container">
+
+      <a href="meus_chats_usuario.html">
+        <div class="d-md-none">
+          <img src="img/icone-seta-pra-esquerda.ico" style="width: 50px;" alt="">
+        </div>
+      </a>
 
       <div class="messaging">
         <div class="inbox_msg">
-          <div class="inbox_people">
+          <div class="inbox_people d-md-block d-none">
             <div class="headind_srch">
               <div class="recent_heading">
                 <h4>Recentes</h4>
@@ -93,12 +100,10 @@
               <div class="chat_list active_chat">
                 <div class="chat_people">
                   <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                  <a href="meus_chats_usuario-2.html">
-                    <div class="chat_ib">
-                      <h5>Adriano Serra <span class="chat_date">Mar 03</span></h5>
-                      <p>Esse é o máximo que tu pode baixar?</p>
-                    </div>
-                  </a>
+                  <div class="chat_ib">
+                    <h5>Adriano Serra <span class="chat_date">Mar 03</span></h5>
+                    <p>Esse é o máximo que tu pode baixar?</p>
+                  </div>
                 </div>
               </div>
               <div class="chat_list">
@@ -157,7 +162,7 @@
               </div>
             </div>
           </div>
-          <div class="mesgs d-md-block d-none">
+          <div class="mesgs">
             <div class="msg_history">
               <div class="incoming_msg">
                 <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
