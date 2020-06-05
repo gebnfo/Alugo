@@ -94,14 +94,34 @@
 
           <form class="col-lg-9">
             <div class="ml-3 mr-3 form-group">
-              <input type="text" class="form-control" required id="inputNome" placeholder="Título*">
+              <input type="text" class="form-control" id="inputNome" placeholder="Título*">
             </div>
             <div class="ml-3 mr-3 form-group">
-              <input type="text" id="inputPreco" required class="form-control" placeholder="Preço*">
+              <textarea id="inputDescricao" rows="4" class="form-control" placeholder="Descrição*"></textarea>
+            </div>
+            <div class="form-group col-lg-6">
+              <select class="form-control" id="inputCategoria">
+                <option>Categoria*</option>
+                <option>Ferramentas</option>
+                <option>Eletrônicos</option>
+                <option>Construção</option>
+                <option>Moda e Beleza</option>
+                <option>Automóveis</option>
+                <option>Para a sua casa</option>
+                <option>Agro e indústria</option>
+              </select>
             </div>
 
-            <div class="ml-3 mr-3 form-group">
-              <input type="text" id="inputImagem" required class="form-control" placeholder="url imagem*">
+            <div class="ml-3 mb-4 col-lg-6 col-11 custom-file">
+              <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+              <label class="custom-file-label" for="customFileLang">Selecionar Arquivo</label>
+              <small class="form-text text-muted">Só serão aceitas Imagens com tamanho até 400x380.</small>
+            </div>
+
+            <div class="form-group col-lg-3 col-sm-12 mt-3"
+              style="border-radius: 20px; color: rgb(74, 74, 74); font-weight: bold;">
+              <label for="inputLocalizacao">Localização</label>
+              <input type="text" class="form-control" id="inputLocalizacao" placeholder="CEP- xx.xxx-xxx">
             </div>
           </form>
         </div>
@@ -114,7 +134,7 @@
 
           </div>
           <div class="col-lg-3 text-center">
-            <button onclick="incluir()" class="btn btn-primary px-5 btn-block mt-3 mt-lg-0 btn-lg arredondar">Anunciar</button>
+            <button class="btn btn-primary px-5 btn-block mt-3 mt-lg-0 btn-lg arredondar">Anunciar</button>
           </div>
         </div>
 
@@ -155,36 +175,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    
-  function incluir (){
-    var server = "http://localhost:3001/products"
-
-    var nome = document.getElementById("inputNome").value
-    var preco = document.getElementById("inputPreco").value
-    var url = document.getElementById("inputImagem").value
-    var sendInfo = {
-           name: nome,
-           price: preco,
-           path: url
-       };
-
-       $.ajax({
-           type: "POST",
-           url: server,
-           dataType: "json",
-           success: function (msg) {
-               alert("Produto Inserido com sucesso!")
-           },
-           error (){
-              alert("Servidor não conectado!")
-           },
-
-           data: sendInfo
-       });
-  }
-  </script>
 
 </body>
 
