@@ -1,0 +1,18 @@
+<script src="jquery-3.2.1.min.js"></script>
+
+<script>
+    $.ajax({
+        url: 'http://localhost:3001/api/v1/users',
+        method: 'GET',
+        /*headers: {
+            "Authorization": "bearer eyJhbGciOiJ1ZDlkN0lkXCI",
+            "CompanyId": 1
+        }*/
+    })
+        .then(function (data) {
+            console.log(data);
+        })
+        .catch(function (err) {
+            console.log('Ocorreu um erro na requisição da api:', err);
+        });
+</script>
