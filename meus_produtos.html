@@ -173,7 +173,7 @@
   <script src="vendor/jquery/jquery.min.js">  </script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
-    var server = "http://localhost:3001/products"
+    var server = "http://localhost:3333/products"
     
   $.ajax ({
     url: server,
@@ -258,13 +258,13 @@
   }
 
   function alterar (id){
-    var server = "http://localhost:3001/products/" + id
+    var server = "http://localhost:3333/products/" + id
 
     var nome = document.getElementById("inputNome").value
     var preco = document.getElementById("inputPreco").value
     var url = document.getElementById("inputImagem").value
     var sendInfo = {
-           name: nome,
+           name: nome, 
            price: preco,
            path: url
        };
